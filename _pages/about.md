@@ -9,7 +9,7 @@ redirect_from:
 
 About me
 ======
-I am Zhicheng Jiang from China, an undergraduate student in MIT Class of 2028, planning to double major in Math and Computer Science(6&18). My CV can be found [here](http://jzc-2007.github.io/files/CV.pdf).
+I am Zhicheng Jiang from China, an undergraduate student in MIT Class of 2028, planning to double major in Math and Computer Science(6&18). My CV can be found [here](https://jzc-2007.github.io/cv/).
 
 Having had a prepraratory year at Tsinghua University, I have developed basic understandings and strong interests in Artificial Intelligence and Machine Learning. I am especially interested in designing algorithms and models that can solve real-world problems by formulating human intuition and experience to mathematical form. I did IMO in high school and I am also interested in AI4Math, or more generally, how to let AI think.
 

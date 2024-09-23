@@ -56,6 +56,3 @@ Others
 ======
 A pdf version of my CV is available [here](http://jzc-2007.github.io/files/CV.pdf).
   
-  <!-- {% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %} -->
