@@ -43,10 +43,10 @@ Skills
 
 Projects
 ======
-Deep Learning Course Project: [VideoStyleTransfer](
+* Deep Learning Course Project: [VideoStyleTransfer](
 https://github.com/Faded-Nebula/DL-Project)
 
-LLM Applications Course Project: [LLM-Database](https://github.com/Hidden-Hyperparameter/LLM_project)
+* LLM Applications Course Project: [LLM-Database](https://github.com/Hidden-Hyperparameter/LLM_project)
 
 Others
 ======
