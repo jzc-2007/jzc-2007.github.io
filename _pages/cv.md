@@ -48,10 +48,6 @@ https://github.com/Faded-Nebula/DL-Project)
 
 LLM Applications Course Project: [LLM-Database](https://github.com/Hidden-Hyperparameter/LLM_project)
 
-
-
-<!-- Publications
-====== -->
 Others
 ======
 A pdf version of my CV is available [here](http://jzc-2007.github.io/files/CV.pdf).
