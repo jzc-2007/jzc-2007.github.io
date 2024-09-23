@@ -24,21 +24,26 @@ Tsinghua University:
 * **Intro to Scientific Research of Lab** (2023 Fall)
 * **Abstract Algebra** (2024 Spring)
 * **Intro to Computer Systems** (2024 Spring)
-* **Deep Learning** (2024 Spring)
+* **Deep Learning** (2024 Spring) [lecture notes](http://szjzc2018/dl)
 * **Intro to LLM Applications** (2024 Spring)
 * GPA: **4.00/4.00**
 
 MIT:
 * 6.S978(G) **Deep Generative Models** (2024 Fall)
 * 6.8611 **Quantitative Methods for Natural Language Processing** (2024 Fall)
-  
+
+Awards
+======
+* **First Prize** in National Olympiad in Informatics in Provinces (NOIP 2021)
+* **Gold Medal** in 64th International Mathematical Olympiad (IMO 2023)
+
 Skills
 ======
-* Chinese(Native), English(Fluent)
+* Mandarin(Native), English(Fluent)
 * C++, Python(pytorch)
 
-Publications
-======
+<!-- Publications
+====== -->
 
 A pdf version of my CV is available [here](http://jzc-2007.github.io/files/CV.pdf).
   
