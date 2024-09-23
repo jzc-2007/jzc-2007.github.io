@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,12 +9,17 @@ redirect_from:
 
 About me
 ======
-I am Zhicheng Jiang from China, an undergraduate student in MIT Class of 2028, planning to major in Math and Computer Science(6&18). My CV can be found [here](http://jzc-2007.github.io/files/CV.pdf).
+I am Zhicheng Jiang from China, an undergraduate student in MIT Class of 2028, planning to double major in Math and Computer Science(6&18). My CV can be found [here](http://jzc-2007.github.io/files/CV.pdf).
 
 Having had a prepraratory year at Tsinghua University, I have developed basic understandings and strong interests in Artificial Intelligence and Machine Learning. I am especially interested in designing algorithms and models that can solve real-world problems by formulating human intuition and experience to mathematical form. I did IMO in high school and I am also interested in AI4Math, or more generally, how to let AI think.
 
-I am just a beginner on the big stage of AI, and I am looking forward to gaining more experience and contributing to the field. I am open to anyone who shares the same interests with me to discuss or collaborate together on some projects.
-<!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+I am just a beginner on the big stage of AI, and I am looking forward to gaining more experience and contributing to the field. I am open to anyone who shares the same interests with me to discuss interesting thoughts or collaborate together on some projects. Also, I am eager to learn from anyone who is more experienced than me.
+
+Besides academics, I also like playing table tennis and badminton, and all kinds of strategy games. I am always welcome to make new friends and have fun together!
+
+<!-- 
+
+This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
 A data-driven personal website
 ======
@@ -53,4 +58,6 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
+More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. 
+
+-->

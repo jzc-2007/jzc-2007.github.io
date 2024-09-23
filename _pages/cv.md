@@ -20,6 +20,7 @@ Tsinghua University:
 * **Advanced Calculus** (2023 Fall)
 * **Algorithm Design** (2023 Fall)
 * **Intro to Scientific Research of Lab** (2023 Fall)
+* **Intro to Programming in C/C++** (2023 Fall)
 * **Abstract Algebra** (2024 Spring)
 * **Intro to Computer Systems** (2024 Spring)
 * **Deep Learning** (2024 Spring) [lecture notes](http://github.com/szjzc2018/dl)
@@ -40,11 +41,21 @@ Skills
 * Mandarin(Native), English(Fluent)
 * C++, Python(pytorch)
 
+Projects
+======
+Deep Learning Course Project: [VideoStyleTransfer](
+https://github.com/Faded-Nebula/DL-Project)
+
+LLM Applications Course Project: [LLM-Database](https://github.com/Hidden-Hyperparameter/LLM_project)
+
+
+
 <!-- Publications
 ====== -->
-
+Others
+======
 A pdf version of my CV is available [here](http://jzc-2007.github.io/files/CV.pdf).
   
-  {% for post in site.publications reversed %}
+  <!-- {% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}
+  {% endfor %} -->
