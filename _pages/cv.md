@@ -22,7 +22,7 @@ Tsinghua University:
 * **Intro to Scientific Research of Lab** (2023 Fall)
 * **Abstract Algebra** (2024 Spring)
 * **Intro to Computer Systems** (2024 Spring)
-* **Deep Learning** (2024 Spring) [lecture notes](http://szjzc2018/dl)
+* **Deep Learning** (2024 Spring) [lecture notes](http://github.com/szjzc2018/dl)
 * **Intro to LLM Applications** (2024 Spring)
 * GPA: **4.00/4.00**
 
