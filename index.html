@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhicheng Jiang | Personal Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 侧边导航 -->
+        <nav class="sidebar">
+            <div class="profile">
+                <div class="profile-img">
+                    <div class="avatar">ZJ</div>
+                </div>
+                <h2 class="name">Zhicheng Jiang</h2>
+                <p class="title">MIT '28 | Math & CS</p>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#publications"><i class="fas fa-book"></i> Publications</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            
+            <div class="social-links">
+                <a href="mailto:your-email@example.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+            <div class="theme-toggle">
+                <span>Theme</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </nav>
+        
+        <!-- 主内容区域 -->
+        <main class="main-content">
+            <!-- 首页/英雄区域 -->
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <div class="code-comment">// Hello, World!</div>
+                    <h1 class="hero-title">I'm <span class="highlight">Zhicheng Jiang</span></h1>
+                    <div class="hero-subtitle">
+                        <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </div>
+                    <p class="hero-description">
+                        Undergraduate student at MIT, passionate about AI, Machine Learning, and Mathematical Thinking.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn primary-btn">Learn More</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-background">
+                    <div class="code-snippet">
+                        <pre><code class="language-python">
+def hello_world():
+    interests = ["AI", "Machine Learning", 
+                "Mathematics", "Algorithms"]
+    
+    for interest in interests:
+        explore(interest)
+        
+    return "Welcome to my world!"
+                        </code></pre>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 关于我 -->
+            <section id="about" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am Zhicheng Jiang from China, an undergraduate student in MIT Class of 2028, planning to double major in Math and Computer Science (6&18).</p>
+                        
+                        <p>Having had a preparatory year at Tsinghua University, I have developed basic understandings and strong interests in Artificial Intelligence and Machine Learning. I am especially interested in designing algorithms and models that can solve real-world problems by formulating human intuition and experience to mathematical form.</p>
+                        
+                        <p>I did IMO in high school and I am also interested in AI4Math, or more generally, how to let AI think.</p>
+                        
+                        <p>I am looking forward to gaining more experience and contributing to the field. I am open to anyone who shares the same interests with me to discuss interesting thoughts or collaborate together on some projects. Now, I have had the privilege to work with Kaiming He to explore the world of generative models.</p>
+                        
+                        <p>Besides academics, I also like playing table tennis and badminton, and all kinds of strategy games. I am always welcome to make new friends and have fun together!</p>
+                        
+                        <p>A PDF version of my CV can be found <a href="assets/docs/CV.pdf" target="_blank">here</a>.</p>
+                    </div>
+                    <div class="about-cards">
+                        <div class="card">
+                            <div class="card-icon"><i class="fas fa-brain"></i></div>
+                            <h3 class="card-title">AI Research</h3>
+                            <p class="card-text">Exploring generative models and mathematical foundations of AI.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon"><i class="fas fa-square-root-alt"></i></div>
+                            <h3 class="card-title">Mathematics</h3>
+                            <p class="card-text">IMO Gold Medalist with strong interest in mathematical thinking.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                            <h3 class="card-title">Programming</h3>
+                            <p class="card-text">Experienced in C++ and Python with focus on ML frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 教育背景 -->
+            <section id="education" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Massachusetts Institute of Technology</h3>
+                            <p>Undergraduate, Double Major in Mathematics and Computer Science</p>
+                            <div class="timeline-courses">
+                                <h4>Core Courses:</h4>
+                                <ul>
+                                    <li>6.S978(G) Deep Generative Models (2024 Fall)</li>
+                                    <li>6.8611 Quantitative Methods for Natural Language Processing (2024 Fall)</li>
+                                    <li>6.4110 Representation, Inference and Reasoning in AI (2025 Spring)</li>
+                                    <li>18.619 Discrete Probability and Stochastic Processes (2025 Spring)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Tsinghua University (IIIS, Yao Class)</h3>
+                            <p>Preparatory Year</p>
+                            <div class="timeline-courses">
+                                <h4>Core Courses:</h4>
+                                <ul>
+                                    <li>Linear Algebra (2023 Fall)</li>
+                                    <li>Advanced Calculus (2023 Fall)</li>
+                                    <li>Algorithm Design (2023 Fall)</li>
+                                    <li>Intro to Scientific Research of Lab (2023 Fall)</li>
+                                    <li>Intro to Programming in C/C++ (2023 Fall)</li>
+                                    <li>Abstract Algebra (2024 Spring)</li>
+                                    <li>Intro to Computer Systems (2024 Spring)</li>
+                                    <li>Deep Learning (2024 Spring)</li>
+                                    <li>Intro to LLM Applications (2024 Spring)</li>
+                                </ul>
+                                <p class="gpa">GPA: 4.00/4.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2018 - 2023</div>
+                        <div class="timeline-content">
+                            <h3>Shenzhen Middle School</h3>
+                            <p>High School Education</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 技能 -->
+            <section id="skills" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-name">C++</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Python</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-name">PyTorch</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Languages</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-name">Mandarin (Native)</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">English (Fluent)</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 奖项 -->
+            <section id="awards" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Awards</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="awards-container">
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-medal"></i></div>
+                        <div class="award-content">
+                            <h3>Gold Medal</h3>
+                            <p>64th International Mathematical Olympiad (IMO 2023)</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="award-content">
+                            <h3>First Prize</h3>
+                            <p>National Olympiad in Informatics in Provinces (NOIP 2021)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 项目 -->
+            <section id="projects" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">VideoStyleTransfer</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">Deep Learning Course Project focused on transferring artistic styles to video content while maintaining temporal consistency.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">LLM-Database</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">LLM Applications Course Project exploring the integration of large language models with database systems.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Databases</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 出版物 -->
+            <section id="publications" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Publications</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="publications-list">
+                    <div class="publication-item">
+                        <h3 class="publication-title">Is Noise Conditioning Necessary in Denoising Generative Models?</h3>
+                        <p class="publication-authors">Zhicheng Jiang, et al.</p>
+                        <div class="publication-links">
+                            <a href="#" class="publication-link">arXiv</a>
+                        </div>
+                        <p class="publication-abstract">
+                            This research explores the necessity of noise conditioning in denoising generative models, 
+                            investigating alternative approaches and their implications for model performance and efficiency.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 联系方式 -->
+            <section id="contact" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>Cambridge, MA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-university"></i></div>
+                            <div class="contact-text">
+                                <h3>Institution</h3>
+                                <p>MIT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Get In Touch</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 页脚 -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2025 Zhicheng Jiang. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">CV</a>
+                        <a href="#" class="footer-link">Sitemap</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    
+    <!-- 脚本 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
