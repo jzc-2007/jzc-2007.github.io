@@ -31,10 +31,11 @@ function initTypewriter() {
   const options = {
     strings: [
       'MIT Undergraduate Student',
-      'Math & Computer Science Major',
-      'AI & Machine Learning Enthusiast',
+      '18 (Math) & 6-4(AI)',
+      'DL Enthusiast',
       'IMO Gold Medalist',
-      'Researcher in Generative Models'
+      'Welcome to my world!',
+      'AI reasoning'
     ],
     typeSpeed: 50,
     backSpeed: 30,
