@@ -1255,3 +1255,23 @@ input:checked + .slider:before {
     justify-content: center;
   }
 }
+.sidebar            { display: none; }      /* 整个侧栏不再渲染 */
+.container          { display: block; }     /* 不用 flex 布局了 */
+.main-content       { margin-left: 0; } 
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: white;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 100;
+}
+.top-nav ul  { display: flex; gap: 2rem; }
+.top-nav a   { color: var(--text-dark); font-weight: 500; }
+.top-nav a:hover { color: var(--primary-color); }
+.main-content { padding-top: 60px; }   /* 给正文让位 */
