@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zhicheng Jiang is an MIT undergraduate researching generative models, automated theorem proving, and mathematical foundations of AI.">
     <title>Zhicheng Jiang | Personal Website</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231e3a8a'/%3E%3Ctext x='50' y='65' text-anchor='middle' font-size='50' font-family='monospace' fill='white'%3EJZ%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- 主容器 -->
@@ -19,7 +21,9 @@
             <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
             <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
             <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+            <li><a href="#experience"><i class="fas fa-flask"></i> Experience</a></li>
             <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#awards"><i class="fas fa-medal"></i> Awards</a></li>
             <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
             <li><a href="#publications"><i class="fas fa-book"></i> Publications</a></li>
             <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
@@ -38,16 +42,15 @@
                         <span class="typed-text"></span><span class="cursor">&nbsp;</span>
                     </div>
                     <p class="hero-description">
-                        Undergraduate student at MIT, 
-                        passionate about AI, Machine Learning, 
-                        and Mathematical Thinking.
+                        MIT undergraduate researching generative models,
+                        automated theorem proving, and mathematical reasoning.
                     </p>
                     <div class="hero-buttons">
                         <a href="#about" class="btn primary-btn">Learn More</a>
                         <a href="#contact" class="btn secondary-btn">Contact Me</a>
                     </div>
                 </div>
-                <div class="hero-background" style="transform: scale(0.5); transform-origin: top left;"></div>
+                <div class="hero-background">
                     <div class="code-snippet" style="font-size: 0.8rem;">
                         <pre><code class="language-bash">
 you@my_world: ~$ df -h
@@ -55,7 +58,7 @@ you@my_world: ~$ df -h
     Baby      10Y   10Y    0  100%  /CHN/Guangdong/Shenzhen
 Middle School  5Y    5Y    0  100%  /CHN/Guangdong/Shenzhen/SMS
  Pre-College   1Y    1Y    0  100%  /CHN/Beijing/THU/IIIS
-  Undergrad    4Y    1Y   3Y   25%  /USA/MA/MIT
+  Undergrad    4Y    2Y   2Y   50%  /USA/MA/MIT
    Future     inf     0  inf    0%  /
 
 you@my_world: ~$ jzc get-email
@@ -68,7 +71,7 @@ you@my_world: ~$ jzc get-future-plan -y 3
 Learn and explore more at MIT!
 
 you@my_world: ~$ jzc get-future-plan -work
-NotImplementedError: Not decided yet!
+Build systems that help AI reason.
 
 you@my_world: ~$ exit
 bye-bye!
@@ -87,17 +90,17 @@ Connection to 114.514.1919.810 closed.
                 </div>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>I am Zhicheng Jiang from China, an undergraduate student in MIT Class of 2028, planning to double major in Math and Computer Science (6&18).</p>
+                        <p>I am Zhicheng Jiang, an MIT Class of 2028 undergraduate double-majoring in Mathematics and Computer Science.</p>
                         
-                        <p>Having had a preparatory year at Tsinghua University, I have developed basic understandings and strong interests in Artificial Intelligence and Machine Learning. I am especially interested in designing algorithms and models that can solve real-world problems by formulating human intuition and experience to mathematical form.</p>
+                        <p>After a preparatory year at Tsinghua University, I developed a strong interest in artificial intelligence and machine learning. I am especially interested in turning human intuition into mathematical formulations, algorithms, and models that solve real problems.</p>
                         
-                        <p>I did IMO in high school and I am also interested in AI4Math, or more generally, how to let AI think.</p>
+                        <p>I competed in the IMO in high school and remain interested in AI for mathematics—and, more broadly, how to build systems that reason.</p>
                         
-                        <p>I am looking forward to gaining more experience and contributing to the field. I am open to anyone who shares the same interests with me to discuss interesting thoughts or collaborate together on some projects. Now, I have had the privilege to work with Kaiming He to explore the world of generative models.</p>
+                        <p>At MIT, I work with Kaiming He on generative models. I have also worked on automated theorem proving with ByteDance Seed AI4Math and on agentic data pipelines at Abaka AI. I welcome conversations and collaborations with people who share these interests.</p>
                         
                         <p>Besides academics, I also like playing table tennis and badminton, and all kinds of strategy games. I am always welcome to make new friends and have fun together!</p>
                         
-                        <p>A PDF version of my CV can be found <a href="assets/docs/Zhicheng_resume.pdf" target="_blank">here</a>.</p>
+                        <p>For a concise overview, <a href="assets/docs/Zhicheng_resume.pdf" target="_blank" rel="noopener">view my resume (PDF)</a>.</p>
                     </div>
                     <div class="about-cards">
                         <div class="card">
@@ -138,8 +141,9 @@ Connection to 114.514.1919.810 closed.
                                     <li>6.S978(G) Deep Generative Models (2024 Fall)</li>
                                     <li>6.8611 Quantitative Methods for Natural Language Processing (2024 Fall)</li>
                                     <li>6.4110 Representation, Inference and Reasoning in AI (2025 Spring)</li>
-                                    <!-- <li>18.619 Discrete Probability and Stochastic Processes (2025 Spring)</li> -->
+                                    <li>6.6410 Quantum Computation</li>
                                 </ul>
+                                <p class="gpa">GPA: 5.0/5.0</p>
                             </div>
                         </div>
                     </div>
@@ -176,6 +180,48 @@ Connection to 114.514.1919.810 closed.
                     </div>
                 </div>
             </section>
+
+            <!-- 研究与工作经历 -->
+            <section id="experience" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jul 2026 - Sep 2026</div>
+                        <div class="timeline-content">
+                            <h3>Research Engineer, Abaka AI</h3>
+                            <p>Built agentic systems to improve data pipelines and conducted independent research.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jul 2025 - Dec 2025</div>
+                        <div class="timeline-content">
+                            <h3>ByteDance Seed AI4Math</h3>
+                            <p>Developed algorithms for Seed-Prover, an agentic automated theorem prover that earned a silver-medal-level result at IMO 2025 and achieved state-of-the-art results on PutnamBench and other challenging mathematics benchmarks.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Sep 2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Undergraduate Researcher, MIT</h3>
+                            <p>Researching diffusion and flow-matching models with Kaiming He, with an emphasis on the principles underlying denoising-based generative models.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Feb 2024 - Sep 2024</div>
+                        <div class="timeline-content">
+                            <h3>Undergraduate Researcher, Tsinghua University</h3>
+                            <p>Worked with William Kuszmaul on theoretical analysis and algorithm design for randomized data structures.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
             <!-- 技能 -->
             <section id="skills" class="section">
@@ -186,47 +232,25 @@ Connection to 114.514.1919.810 closed.
                 <div class="skills-container">
                     <div class="skills-category">
                         <h3>Programming Languages</h3>
-                        <div class="skill-bars">
-                            <div class="skill">
-                                <div class="skill-name">C++</div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-name">Python</div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%"></div>
-                                </div>
-                            </div>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Python</span>
+                            <span class="skill-chip">C</span>
+                            <span class="skill-chip">C++</span>
+                            <span class="skill-chip">Lean</span>
                         </div>
                     </div>
                     <div class="skills-category">
-                        <h3>Frameworks & Libraries</h3>
-                        <div class="skill-bars">
-                            <div class="skill">
-                                <div class="skill-name">PyTorch</div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 80%"></div>
-                                </div>
-                            </div>
+                        <h3>Frameworks &amp; Libraries</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip">JAX</span>
+                            <span class="skill-chip">PyTorch</span>
                         </div>
                     </div>
                     <div class="skills-category">
                         <h3>Languages</h3>
-                        <div class="skill-bars">
-                            <div class="skill">
-                                <div class="skill-name">Mandarin (Native)</div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 100%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-name">English (Fluent)</div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%"></div>
-                                </div>
-                            </div>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Chinese (Native)</span>
+                            <span class="skill-chip">English (Proficient)</span>
                         </div>
                     </div>
                 </div>
@@ -239,6 +263,13 @@ Connection to 114.514.1919.810 closed.
                     <div class="section-divider"></div>
                 </div>
                 <div class="awards-container">
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-ranking-star"></i></div>
+                        <div class="award-content">
+                            <h3>Top 25</h3>
+                            <p>William Lowell Putnam Mathematical Competition (2025)</p>
+                        </div>
+                    </div>
                     <div class="award-item">
                         <div class="award-icon"><i class="fas fa-medal"></i></div>
                         <div class="award-content">
@@ -267,7 +298,7 @@ Connection to 114.514.1919.810 closed.
                         <div class="project-header">
                             <h3 class="project-title">VideoStyleTransfer</h3>
                             <div class="project-links">
-                                <a href="https://github.com/Faded-Nebula/DL-Project" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Faded-Nebula/DL-Project" class="project-link" target="_blank" rel="noopener" aria-label="View VideoStyleTransfer on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <p class="project-description">Deep Learning Course Project focused on transferring artistic styles to video content while maintaining temporal consistency.</p>
@@ -282,7 +313,7 @@ Connection to 114.514.1919.810 closed.
                         <div class="project-header">
                             <h3 class="project-title">LLM-Database</h3>
                             <div class="project-links">
-                                <a href="https://github.com/Hidden-Hyperparameter/LLM_project" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Hidden-Hyperparameter/LLM_project" class="project-link" target="_blank" rel="noopener" aria-label="View LLM-Database on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <p class="project-description">LLM Applications Course Project exploring the integration of large language models with database systems.</p>
@@ -297,10 +328,10 @@ Connection to 114.514.1919.810 closed.
                         <div class="project-header">
                             <h3 class="project-title">Speeding Up Diffusion Models with One-step Generators</h3>
                             <div class="project-links">
-                                <a href="https://github.com/Hope7Happiness/6s978_project" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Hope7Happiness/6s978_project" class="project-link" target="_blank" rel="noopener" aria-label="View the one-step generators project on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                        <p class="project-description">Deep Generative Models course project. A new method to speed up diffusion models by one-step generators. Read more in the <a href="https://hope7happiness.github.io/three_diff/" target="_blank">blog post</a>.</p>
+                        <p class="project-description">Deep Generative Models course project. A new method to speed up diffusion models by one-step generators. Read more in the <a href="https://hope7happiness.github.io/three_diff/" target="_blank" rel="noopener">blog post</a>.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Deep Learning</span>
                             <span class="tech-tag">Diffusion</span>
@@ -311,10 +342,10 @@ Connection to 114.514.1919.810 closed.
                         <div class="project-header">
                             <h3 class="project-title">Auto job management for GCP TPUs</h3>
                             <div class="project-links">
-                                <a href="https://github.com/jzc-2007/tpu_manager" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/jzc-2007/tpu_manager" class="project-link" target="_blank" rel="noopener" aria-label="View the TPU manager on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                        <p class="project-description">A automatic job management system for GCP(Google Cloud Platform) TPUs, allowing users to monitor their jobs, and automatically restart jobs when TPUs are preempted. Also support environment fixing.</p>
+                        <p class="project-description">An automatic job management system for Google Cloud TPUs. It monitors jobs, repairs environments, and resumes workloads after preemptions.</p>
                         <div class="project-tech">
                             <span class="tech-tag">TPU</span>
                             <span class="tech-tag">Python</span>
@@ -350,28 +381,28 @@ Connection to 114.514.1919.810 closed.
                             <a href="https://arxiv.org/abs/2507.23726" class="publication-link">arXiv</a>
                         </div>
                         <p class="publication-abstract">
-                            A automatic formal math theorem prover that achieves SOTA performance on many olympiad-level datasets such as PutnamBench.
+                            An automated formal theorem prover that achieves state-of-the-art performance on olympiad-level benchmarks including PutnamBench.
                         </p>
                     </div>
                     <div class="publication-item">
-                        <h3 class="publication-title"><a href="https://arxiv.org/pdf/2512.17260">Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience</a></h3>
+                        <h3 class="publication-title"><a href="https://arxiv.org/abs/2512.17260">Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience</a></h3>
                         <p class="publication-authors">ByteDance Seed AI4Math</p>
                         <div class="publication-links">
-                            <a href="https://arxiv.org/pdf/2512.17260" class="publication-link">arXiv</a>
+                            <a href="https://arxiv.org/abs/2512.17260" class="publication-link">arXiv</a>
                         </div>
                     </div>
                     <div class="publication-item">
-                        <h3 class="publication-title"><a href="https://arxiv.org/pdf/2512.10953">Bidirectional Normalizing Flow: From Data to Noise and Back</a></h3>
+                        <h3 class="publication-title"><a href="https://arxiv.org/abs/2512.10953">Bidirectional Normalizing Flow: From Data to Noise and Back</a></h3>
                         <p class="publication-authors">Yiyang Lu, Qiao Sun, Xianbang Wang, Zhicheng Jiang, Hanhong Zhao, Kaiming He</p>
                         <div class="publication-links">
-                            <a href="https://arxiv.org/pdf/2512.10953" class="publication-link">arXiv</a>
+                            <a href="https://arxiv.org/abs/2512.10953" class="publication-link">arXiv</a>
                         </div>
                     </div>
                     <div class="publication-item">
-                        <h3 class="publication-title"><a href="https://arxiv.org/pdf/2601.22158">One-step Latent-free Image Generation with Pixel Mean Flows</a></h3>
+                        <h3 class="publication-title"><a href="https://arxiv.org/abs/2601.22158">One-step Latent-free Image Generation with Pixel Mean Flows</a></h3>
                         <p class="publication-authors">Yiyang Lu, Susie Lu, Qiao Sun, Hanhong Zhao, Zhicheng Jiang, Xianbang Wang, Tianhong Li, Zhengyang Geng, Kaiming He</p>
                         <div class="publication-links">
-                            <a href="https://arxiv.org/pdf/2601.22158" class="publication-link">arXiv</a>
+                            <a href="https://arxiv.org/abs/2601.22158" class="publication-link">arXiv</a>
                         </div>
                     </div>
                 </div>
@@ -422,7 +453,7 @@ Connection to 114.514.1919.810 closed.
                                 <label for="message">Message</label>
                                 <textarea id="message" name="message" rows="5" required></textarea>
                             </div>
-                            <button type="submit" class="btn primary-btn">Send Message</button>
+                            <button type="submit" class="btn primary-btn">Open Email Draft</button>
                         </form>
                     </div>
                 </div>
@@ -431,10 +462,10 @@ Connection to 114.514.1919.810 closed.
             <!-- 页脚 -->
             <footer class="footer">
                 <div class="footer-content">
-                    <p>&copy; 2025 Zhicheng Jiang. All rights reserved.</p>
+                    <p>&copy; 2026 Zhicheng Jiang. All rights reserved.</p>
                     <div class="footer-links">
-                        <a href="#" class="footer-link">CV</a>
-                        <a href="#" class="footer-link">Sitemap</a>
+                        <a href="assets/docs/Zhicheng_resume.pdf" class="footer-link" target="_blank" rel="noopener">Resume</a>
+                        <a href="#home" class="footer-link">Back to top</a>
                     </div>
                 </div>
             </footer>
@@ -442,10 +473,7 @@ Connection to 114.514.1919.810 closed.
     </div>
     
     <!-- 脚本 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

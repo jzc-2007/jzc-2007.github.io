@@ -82,6 +82,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
   font-size: 16px;
 }
 
@@ -129,6 +130,14 @@ a {
 
 a:hover {
   color: var(--primary-light);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--accent-cyan);
+  outline-offset: 3px;
 }
 
 ul {
@@ -706,33 +715,31 @@ input:checked + .slider:before {
   color: var(--primary-color);
 }
 
-.skill {
-  margin-bottom: 1.25rem;
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
-.skill-name {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  background: white;
+  color: var(--gray-700);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
-.skill-bar {
-  height: 10px;
-  background-color: var(--gray-200);
-  border-radius: var(--radius-full);
-  overflow: hidden;
-}
-
-.dark-mode .skill-bar {
-  background-color: var(--gray-700);
-}
-
-.skill-level {
-  height: 100%;
-  background-color: var(--primary-color);
-  border-radius: var(--radius-full);
-  transition: width 1s ease-in-out;
+.dark-mode .skill-chip {
+  border-color: var(--gray-700);
+  background: var(--gray-800);
+  color: var(--gray-300);
 }
 
 /* ===== 奖项部分 ===== */
@@ -1230,31 +1237,6 @@ input:checked + .slider:before {
   transform: translateY(0);
 }
 
-/* 移动端导航按钮 */
-.mobile-nav-toggle {
-  display: none;
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  border-radius: var(--radius-md);
-  width: 50px;
-  height: 50px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  box-shadow: var(--shadow-md);
-}
-
-@media (max-width: 768px) {
-  .mobile-nav-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
 .sidebar            { display: none; }      /* 整个侧栏不再渲染 */
 .container          { display: block; }     /* 不用 flex 布局了 */
 .main-content       { margin-left: 0; } 
@@ -1271,7 +1253,52 @@ input:checked + .slider:before {
   padding: 0 2rem;
   z-index: 100;
 }
-.top-nav ul  { display: flex; gap: 2rem; }
+.top-nav-links-container {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.top-nav-links-container::-webkit-scrollbar { display: none; }
+.top-nav ul  {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.9rem, 2vw, 2rem);
+  min-width: max-content;
+}
 .top-nav a   { color: var(--text-dark); font-weight: 500; }
-.top-nav a:hover { color: var(--primary-color); }
+.top-nav a:hover,
+.top-nav a.active { color: var(--primary-color); }
 .main-content { padding-top: 60px; }   /* 给正文让位 */
+
+@media (max-width: 768px) {
+  .top-nav {
+    padding: 0 1rem;
+  }
+
+  .top-nav ul {
+    gap: 1.25rem;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}

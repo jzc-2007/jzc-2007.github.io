@@ -7,19 +7,13 @@
 document.addEventListener('DOMContentLoaded', function() {
   // 初始化打字效果
   initTypewriter();
-  
-  // 初始化深色模式
-  initDarkMode();
-  
+
   // 初始化滚动动画
   initScrollAnimations();
-  
+
   // 初始化平滑滚动
   initSmoothScroll();
-  
-  // 初始化移动导航
-  initMobileNav();
-  
+
   // 初始化表单提交
   initContactForm();
 });
@@ -32,10 +26,10 @@ function initTypewriter() {
     strings: [
       'MIT Undergraduate Student',
       '18 (Math) & 6-4(AI)',
-      'DL Enthusiast',
+      'Generative Models Researcher',
+      'Automated Theorem Proving',
       'IMO Gold Medalist',
-      'Welcome to my world!',
-      'AI reasoning'
+      'Building AI That Reasons'
     ],
     typeSpeed: 50,
     backSpeed: 30,
@@ -45,37 +39,9 @@ function initTypewriter() {
   
   // 检查元素是否存在
   const typedElement = document.querySelector('.typed-text');
-  if (typedElement) {
+  if (typedElement && typeof Typed !== 'undefined') {
     new Typed('.typed-text', options);
   }
-}
-
-/**
- * 初始化深色模式
- */
-function initDarkMode() {
-  const themeToggle = document.getElementById('theme-toggle');
-  const body = document.body;
-  
-  // 检查本地存储中的主题偏好
-  const isDarkMode = localStorage.getItem('darkMode') === 'true';
-  
-  // 应用保存的主题
-  if (isDarkMode) {
-    body.classList.add('dark-mode');
-    themeToggle.checked = true;
-  }
-  
-  // 监听主题切换
-  themeToggle.addEventListener('change', function() {
-    if (this.checked) {
-      body.classList.add('dark-mode');
-      localStorage.setItem('darkMode', 'true');
-    } else {
-      body.classList.remove('dark-mode');
-      localStorage.setItem('darkMode', 'false');
-    }
-  });
 }
 
 /**
@@ -92,7 +58,7 @@ function initScrollAnimations() {
   const animatedElements = [
     '.card', 
     '.timeline-item', 
-    '.skill', 
+    '.skill-chip',
     '.project-card', 
     '.award-item', 
     '.publication-item',
@@ -129,7 +95,7 @@ function initScrollAnimations() {
  * 初始化平滑滚动
  */
 function initSmoothScroll() {
-  const navLinks = document.querySelectorAll('.nav-links a, .hero-buttons a');
+  const navLinks = document.querySelectorAll('.top-nav-links a, .hero-buttons a, .footer-links a[href^="#"]');
   
   navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
@@ -146,15 +112,7 @@ function initSmoothScroll() {
         // 如果目标元素存在
         if (targetElement) {
           // 平滑滚动到目标位置
-          window.scrollTo({
-            top: targetElement.offsetTop,
-            behavior: 'smooth'
-          });
-          
-          // 如果在移动设备上，关闭导航菜单
-          if (window.innerWidth <= 768) {
-            document.querySelector('.sidebar').classList.remove('active');
-          }
+          targetElement.scrollIntoView({ behavior: 'smooth' });
         }
       }
     });
@@ -162,6 +120,7 @@ function initSmoothScroll() {
   
   // 监听滚动以更新活动导航链接
   window.addEventListener('scroll', updateActiveNavLink);
+  updateActiveNavLink();
 }
 
 /**
@@ -169,7 +128,7 @@ function initSmoothScroll() {
  */
 function updateActiveNavLink() {
   const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('.nav-links a');
+  const navLinks = document.querySelectorAll('.top-nav-links a');
   
   // 获取当前滚动位置
   const scrollPosition = window.scrollY;
@@ -189,48 +148,10 @@ function updateActiveNavLink() {
       });
       
       // 添加活动类到当前部分的导航链接
-      const activeLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+      const activeLink = document.querySelector(`.top-nav-links a[href="#${sectionId}"]`);
       if (activeLink) {
         activeLink.classList.add('active');
       }
-    }
-  });
-}
-
-/**
- * 初始化移动导航
- */
-function initMobileNav() {
-  // 创建移动导航切换按钮
-  const mobileNavToggle = document.createElement('button');
-  mobileNavToggle.className = 'mobile-nav-toggle';
-  mobileNavToggle.innerHTML = '<i class="fas fa-bars"></i>';
-  document.body.appendChild(mobileNavToggle);
-  
-  // 监听切换按钮点击
-  mobileNavToggle.addEventListener('click', function() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.classList.toggle('active');
-    
-    // 更新图标
-    if (sidebar.classList.contains('active')) {
-      this.innerHTML = '<i class="fas fa-times"></i>';
-    } else {
-      this.innerHTML = '<i class="fas fa-bars"></i>';
-    }
-  });
-  
-  // 点击页面其他部分关闭导航
-  document.addEventListener('click', function(e) {
-    const sidebar = document.querySelector('.sidebar');
-    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-    
-    if (sidebar.classList.contains('active') && 
-        !sidebar.contains(e.target) && 
-        e.target !== mobileNavToggle && 
-        !mobileNavToggle.contains(e.target)) {
-      sidebar.classList.remove('active');
-      mobileNavToggle.innerHTML = '<i class="fas fa-bars"></i>';
     }
   });
 }
@@ -249,34 +170,10 @@ function initContactForm() {
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
       const message = document.getElementById('message').value;
-      
-      // 在实际应用中，这里会发送表单数据到服务器
-      // 这里只是模拟提交成功
-      
-      // 显示成功消息
-      alert(`感谢您的留言，${name}！我会尽快回复您。`);
-      
-      // 重置表单
-      contactForm.reset();
+
+      const subject = encodeURIComponent(`Website message from ${name}`);
+      const body = encodeURIComponent(`${message}\n\nFrom: ${name} <${email}>`);
+      window.location.href = `mailto:jzc_2007@mit.edu?subject=${subject}&body=${body}`;
     });
   }
 }
-
-/**
- * 技能进度条动画
- */
-function animateSkillBars() {
-  const skillLevels = document.querySelectorAll('.skill-level');
-  
-  skillLevels.forEach(level => {
-    const width = level.style.width;
-    level.style.width = '0';
-    
-    setTimeout(() => {
-      level.style.width = width;
-    }, 100);
-  });
-}
-
-// 页面加载完成后执行技能进度条动画
-window.addEventListener('load', animateSkillBars);
