@@ -25,7 +25,7 @@ function initTypewriter() {
   const options = {
     strings: [
       'MIT Undergraduate Student',
-      '18 (Math) & 6-4(AI)',
+      'Mathematics Major; 6-4 Second-Major Approval Pending',
       'Generative Models Researcher',
       'Automated Theorem Proving',
       'IMO Gold Medalist',
